@@ -1,7 +1,15 @@
 [package]
 name = "injected-image-checker"
 version = "0.0.1"
+authors = ["licht.cui <lichtcui@gmail.com>"]
 edition = "2021"
+rust-version = "1.80"
+license = "MIT"
+description = "Verify whether the image contains additional data"
+homepage = "https://github.com/lichtcui/injected-image-checker"
+repository = "https://github.com/lichtcui/injected-image-checker"
+readme = "README.md"
+keywords = ["injected", "image"]
 
 [dependencies]
 binwalk = "3.1.0"
