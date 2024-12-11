@@ -3,17 +3,10 @@ use clap::Parser;
 use std::{fs, path::Path, sync::LazyLock};
 
 static SUPPORTED_EXTENSION: LazyLock<Vec<String>> = LazyLock::new(|| {
-    vec![
-        "png",
-         "jpg",
-         "jpeg",
-         "gif",
-         "svg",
-         "pdf"
-    ]
-    .iter()
-    .map(|x| x.to_string())
-    .collect()
+    vec!["png", "jpg", "jpeg", "gif", "svg"]
+        .iter()
+        .map(|x| x.to_string())
+        .collect()
 });
 
 #[derive(Parser, Debug)]

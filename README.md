@@ -1,7 +1,28 @@
 # injected-image-checker
 
-Verify whether the target image contains additional data, such as video or other types of information
+Verify whether the target image contains additional data, such as video or other types of information.
 
-usage:
+support:
 
-cargo run -- -p=/path/to/file/test.png
+- png
+- jpg
+- jpeg
+- gif
+- svg
+
+### install
+
+```bash
+cargo install injected-image-checker
+```
+
+### params
+
+- `--path`: target image path
+
+### example
+
+```bash
+# mac
+injected-image-checker --path="/target/dir/test.png"
+```
